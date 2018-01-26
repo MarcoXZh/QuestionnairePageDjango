@@ -1,0 +1,3 @@
+{
+    "python.pythonPath": "${env:HOME}/python3/bin/python"
+}
