@@ -4,7 +4,7 @@ A single page to provide questionnaire and collect answers
 
 ## Usage
 
-1. This is developed with [`Django`][django] under [`virtualenv`][venv] of
+1. This is developed with [`Django 2.0.1`][django] under [`virtualenv`][venv] of
    Python3, so the prerequisites include:
 
    - Install Python3:
@@ -21,10 +21,10 @@ A single page to provide questionnaire and collect answers
      source ~/python3/bin/activate
      ```
 
-   - and install `Django`:
+   - and install `Django 2.0.1`:
 
      ```bash
-     pip install django
+     pip install django==2.0.1
      # or
      pip install -r requirements.txt
      ```
@@ -42,11 +42,25 @@ A single page to provide questionnaire and collect answers
    - Startup the server:
 
      ```bash
-     python manage.py runserver
+     python manage.py runserver 0.0.0.0:8000
      ```
 
    - Open the link http://localhost:8000/ to see the page and conduct the
      questionnaire.
+
+   - To allow access from outside, set firewall to allow port 80:
+
+     ```bash
+     sudo ufw enable
+     sudo ufw allow port 8000
+     sudo ufw reload
+     sudo ufw status
+
+     # The following should be in the output:
+     #    8000                       ALLOW       Anywhere
+     #    8000 (v6)                  ALLOW       Anywhere (v6)
+     ```
+
 
 [django]: https://www.djangoproject.com/
 [venv]: https://virtualenv.pypa.io/en/stable/
