@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task # 2 – Web Page Design</title>
+  <meta charset="utf-8">
+
+  <!-- The Bootstrap settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+</head>
+<body class="container" data-spy="scroll" data-target="#main-menu">
+
+  <!-- The top menu bar -->
+  <nav id="main-menu" class="navbar navbar-expand-sm fixed-top">
+    <ul class="navbar-nav nav-pills">
+      <li class="nav-item">
+        <a class="navbar-brand active" href="#">
+          <img id="logo" src="https://www.louistoolkit.ca/static/tools/logos/LOUIS_Logo_blue_small.png" />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">               Why LOUIS?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">               Tools</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">               Subscribe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">               News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section5">               Contact Us</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+           data-toggle="modal" data-target="#login">        Log In</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- The main content components -->
+  <div class="container">
+
+    <!-- The welcome page -->
+    <div id="section0" class="current-page border rounded">
+
+      <!-- Carousel slides -->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+          <li data-target="#carousel" data-slide-to="4"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.louistoolkit.ca/media/images/BC_Photo_55p.original.original.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.louistoolkit.ca/media/images/Grassland_Photo_55p.original.original.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.louistoolkit.ca/media/images/Northern_1_Photo_55p.original.original.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.louistoolkit.ca/media/images/Ontario_Photo_55p.original.original.jpg" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.louistoolkit.ca/media/images/Northern_2_Photo_55p.original.original.jpg" />
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <!-- Text content -->
+      <h1>Welcome to the LOUIS Toolkit</h1> <hr>
+      <div>
+        The Land Occupancy and Use Information System (LOUIS) Toolkit is a user
+        friendly and robust data management solution for Indigenous communities.
+        Check "Tools''" to find out more.
+      </div>
+    </div>
+
+    <!-- The "Why LOUIS?" page -->
+    <div id="section1" class="current-page border rounded">
+      <h1>Why LOUIS?</h1><hr>
+
+      <!-- Tab bar -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" role="tab"
+              href="#why">                                         Why LOUIS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" role="tab"
+              href="#comparison">                                  Comparison</a>
+        </li>
+      </ul>
+
+      <!-- Content under "Why LOUIS?" -->
+      <div class="tab-content">
+        <div class="tab-pane border-top-0 rounded-bottom active" id="why" role="tabpanel">
+          <h2>Flexible, Comprehensive and Secure</h2>
+          <p>
+            The LOUIS Toolkit is flexible and comprehensive data management solution
+            designed for indigenous communities. The LOUIS Toolkit has modules for
+            Asset Management, Consultation, Indigenous Knowledge and Spatial Information.
+            Flexibility exists in each of the modules to ensure that users can configure
+            the system to meet their needs. The LOUIS Toolkit also uses a data security
+            model that requires explicit sharing so that users only can view and manipulate
+            the information they need. The LOUIS Toolkit security model also allows for
+            selective data sharing between departments so that all users have access to
+            up-to-data information.
+          </p>
+          <h2>Easy to Use and Supported</h2>
+          <p>
+            We know that not all staff are trained GIS technicians or data managers so we
+            have created tools that are easy to use. In addition to formal training and
+            support from the LOUIS team, we are working with Indigenous organisations and
+            communities to connect users with each other to provide additional layers of
+            support.
+          </p>
+          <h2>Best Value</h2>
+          <p>
+            The LOUIS Toolkit is the most capable solution and the most flexible solution
+            but it is also very affordable. The LOUIS Toolkit's combination of ease of use,
+            power, flexibility and affordability make it the best value option for Indigenous
+            communities.
+          </p>
+        </div>
+        <div class="tab-pane border-top-0 rounded-bottom" id="comparison" role="tabpanel">
+          <div style="height:300px;padding:2em;">Comparison here.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The "Tools" page -->
+    <div id="section2" class="current-page border rounded">
+        <h1>Tools</h1><hr>
+
+        <!-- Tab bar -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" role="tab"
+               href="#assets">                                      Assets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab"
+               href="#heritage">                                    Heritage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab"
+               href="#layers">                                      Layers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab"
+               href="#referrals">                                   Referrals</a>
+          </li>
+        </ul>
+
+        <!-- Content under "Tools" -->
+        <div class="tab-content">
+          <div class="tab-pane border-top-0 rounded-bottom active" id="assets" role="tabpanel">
+            <div style="height:300px;padding:2em;">Assets here.</div>
+          </div>
+          <div class="tab-pane border-top-0 rounded-bottom" id="heritage" role="tabpanel">
+            <div style="height:300px;padding:2em;">Heritage here.</div>
+          </div>
+          <div class="tab-pane border-top-0 rounded-bottom" id="layers" role="tabpanel">
+            <div style="height:300px;padding:2em;">Layers here.</div>
+          </div>
+          <div class="tab-pane border-top-0 rounded-bottom" id="referrals" role="tabpanel">
+            <div style="height:300px;padding:2em;">Referrals here.</div>
+          </div>
+        </div>
+    </div>
+
+    <!-- The new "Subscribe" page -->
+    <div id="section3" class="current-page border rounded">
+        <h1>Subscribe</h1><hr>
+
+        <!-- Tab bar -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" role="tab"
+               href="#pricing">                                     Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab"
+               href="#subscribe">                                   Subscribe</a>
+          </li>
+        </ul>
+
+        <!-- Content under "Tools" -->
+        <div class="tab-content">
+          <div class="tab-pane border-top-0 rounded-bottom active" id="pricing" role="tabpanel">
+            <div style="height:300px;padding:2em;">
+              Pricing  -- originally under "Why LOUIS?"
+              (<a href="https://www.louistoolkit.ca/whylouis/pricing/">
+                https://www.louistoolkit.ca/whylouis/pricing/
+              </a>). This is because "Pricing" doesn't talk "Why LOUIS?".
+              Current pricing information doesn't show advantage of it.
+            </div>
+          </div>
+          <div class="tab-pane border-top-0 rounded-bottom" id="subscribe" role="tabpanel">
+            <div style="height:300px;padding:2em;">Subscribe here.</div>
+          </div>
+        </div>
+    </div>
+
+    <!-- The "Recent News" page -->
+    <div id="section4" class="current-page border rounded">
+        <h1>Recent News</h1><hr>
+        <div style="height:640px">Recent News list here.</div>
+    </div>
+
+    <!-- The "Contact Us" page -->
+    <div id="section5" class="current-page border rounded">
+        <h1>Contact Us</h1><hr>
+        <div style="height:640px">Contact Us here.</div>
+    </div>
+  </div>
+
+  <!-- The modal dialog for log in -->
+  <div class="modal fade" id="login">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Log In</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input id="email"  class="form-control" type="text" value="" placeholder="Email address" />
+            <input id="password"  class="form-control" type="password" value="" placeholder="Password" />
+            <a href="#">Forget your password?</a>
+            <input id="submit"  class="form-control btn btn-primary" type="submit" value="Log in" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSS for this page -->
+  <link rel="stylesheet" href="./index.css" />
+</body>
+</html>

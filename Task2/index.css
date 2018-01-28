@@ -1,0 +1,24 @@
+body {
+    background:         #f2f2f2;
+}
+#logo {
+    height:             0.8em;
+}
+.navbar {
+    background-image:   linear-gradient(to bottom, #fff 0px, #ccc 100%);
+}
+.nav-item {
+    margin:             0em 1em;
+}
+.current-page {
+    background:         #fcfcfc;
+    margin:             1em 0em;
+    padding:            4em 2em;
+    box-shadow:         0.05em 0.05em 0.05em 0.05em #cccccc;
+}
+.tab-pane {
+    padding:            1em;
+}
+.form-control {
+    margin:             0.25em;
+}
